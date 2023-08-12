@@ -1,0 +1,82 @@
+{
+  "id": "com.double",
+  "name": "doubleWIndow",
+  "version": "1.0.0",
+  "host": [
+    {
+      "app": "PS",
+      "minVersion": "23.0.0"
+    }
+  ],
+  "main": "index.html",
+  "manifestVersion": 5,
+  "entrypoints": [
+    {
+      "type": "panel",
+      "id": "first",
+      "label": {
+        "default": "first window"
+      },
+      "minimumSize": {
+        "width": 120,
+        "height": 140
+      },
+      "maximumSize": {
+        "width": 1200,
+        "height": 10000
+      },
+      "preferredDockedSize": {
+        "width": 150,
+        "height": 200
+      },
+      "preferredFloatingSize": {
+        "width": 300,
+        "height": 200
+      },
+      "commands": [
+        {
+          "id": "show_alert",
+          "label": {
+            "default": "Show Alert",
+            "en-US": "Show Alert (US)",
+            "es-ES": "Show Alert (ES)"
+          }
+        }
+      ]
+    },
+    {
+      "type": "panel",
+      "id": "second",
+      "label": {
+        "default": "second window"
+      },
+      "minimumSize": {
+        "width": 120,
+        "height": 140
+      },
+      "maximumSize": {
+        "width": 1200,
+        "height": 10000
+      },
+      "preferredDockedSize": {
+        "width": 150,
+        "height": 200
+      },
+      "preferredFloatingSize": {
+        "width": 300,
+        "height": 200
+      },
+      "commands": [
+        {
+          "id": "show_alert",
+          "label": {
+            "default": "Show Alert",
+            "en-US": "Show Alert (US)",
+            "es-ES": "Show Alert (ES)"
+          }
+        }
+      ]
+    }
+
+  ]
+}
