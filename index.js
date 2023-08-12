@@ -5,18 +5,10 @@ const createBase = (elm,titleText) =>{
     const title = document.createElement("h1");
     title.textContent = titleText;
     container.appendChild(title);
-    //document.body.appendChild(container); documentに追加すると両方のパネルに表示される
+    //document.body.appendChild(container); adding on document, it'll be displayed all of panels
     elm.appendChild(container);
     return {container:container,title:title};
 }
-/*
-const addBox = base =>{
-    const box = document.createElement("div");
-    box.classList.add("box");
-    base.appendChild(box);
-    return box;
-}
-*/
 
 const createTextBox = (base,id,value = "text") =>{
     const textBox = document.createElement("input");
@@ -52,6 +44,9 @@ class Connection{
 
 const connect = new Connection();
 
+/**
+ * first and second panel's elements constructed through JS.
+ */
 entrypoints.setup({
     panels:{
         first:{
@@ -73,6 +68,14 @@ entrypoints.setup({
                 console.log(event);
                 const element = createBase(event,"second");
                 connect.setElm(element.container);
+            }
+        },
+        third: {
+            show(event) {
+                console.log("third");
+                // third panel's elements constructed on html.
+                // inside uxp-panel Web Component.
+                //I think this is better way to develop multi-panel
             }
         }
     }

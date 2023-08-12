@@ -1,6 +1,6 @@
 {
   "id": "com.double",
-  "name": "doubleWIndow",
+  "name": "multiWIndow",
   "version": "1.0.0",
   "host": [
     {
@@ -32,17 +32,7 @@
       "preferredFloatingSize": {
         "width": 300,
         "height": 200
-      },
-      "commands": [
-        {
-          "id": "show_alert",
-          "label": {
-            "default": "Show Alert",
-            "en-US": "Show Alert (US)",
-            "es-ES": "Show Alert (ES)"
-          }
-        }
-      ]
+      }
     },
     {
       "type": "panel",
@@ -65,18 +55,32 @@
       "preferredFloatingSize": {
         "width": 300,
         "height": 200
-      },
-      "commands": [
-        {
-          "id": "show_alert",
-          "label": {
-            "default": "Show Alert",
-            "en-US": "Show Alert (US)",
-            "es-ES": "Show Alert (ES)"
-          }
-        }
-      ]
+      
     }
-
+  },
+  {
+    "type": "panel",
+    "id": "third",
+    "label": {
+      "default": "third window"
+    },
+    "minimumSize": {
+      "width": 120,
+      "height": 140
+    },
+    "maximumSize": {
+      "width": 1200,
+      "height": 10000
+    },
+    "preferredDockedSize": {
+      "width": 150,
+      "height": 200
+    },
+    "preferredFloatingSize": {
+      "width": 300,
+      "height": 200
+    
+    }
+  }
   ]
 }
